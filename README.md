@@ -1,1 +1,1 @@
-# this is the repo for my blog for animation!🙂
+# this is the repo for my blog of animation!🙂
