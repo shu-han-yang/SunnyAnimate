@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Racecourse
-thumbnail: /images/2024-06-29-01.JPG
+thumbnail: images/2024-06-29-01.JPG
 ---
 
 # Racecourse in Japan
