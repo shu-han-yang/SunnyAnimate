@@ -1,0 +1,23 @@
+a{
+    color: EEEEEE# ;
+}
+
+img {
+    width:680px;
+}
+
+.thumbnail{
+    border: thin solid black;
+    display: inline-block;
+    margin: 25px;
+    
+}
+
+.thumbnail h3{
+    text-align: center;
+}
+
+.thumbnail img{
+    width: 250px;
+    margin: 25px;
+}

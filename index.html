@@ -1,0 +1,18 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Main</h1>
+<p>Welcome to my blog!</p>
+
+<p>yay read my posts.</p>
+
+{% for post in site.posts %}
+    <div class="thumbnail">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <img src="{{ post.thumbnail }}"/>
+    </div>
+{% endfor %}
+
+
