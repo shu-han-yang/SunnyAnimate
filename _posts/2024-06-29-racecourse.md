@@ -8,6 +8,9 @@ thumbnail: images/2024-06-29-01.JPG
  
 Today I went to Urawa racecourse!
 
-![](/images/2024-06-29-01.JPG)
+
+  
+![](/images/2024-06-29-01.JPG)  
+ohblahblah  
 ![](/images/2024-06-29-01.JPG)
 
