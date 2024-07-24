@@ -11,7 +11,7 @@ title: Home
 {% for post in site.posts %}
     <div class="thumbnail">
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <img src="{{ post.thumbnail }}"/>
+        <img src="{{ post.thumbnail | relative_url }}"/>
     </div>
 {% endfor %}
 
