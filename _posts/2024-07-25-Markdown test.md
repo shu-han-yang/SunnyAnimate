@@ -14,8 +14,7 @@ This is a test for markdown.
   
 one   
 ![](/images/2024-06-29-01.JPG)  
-two  
-![](/images/2024-06-29-01.JPG)
+
 -------  
   
 ● path uses images
