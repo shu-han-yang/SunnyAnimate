@@ -9,11 +9,11 @@ thumbnail: images/2024-06-29-01.JPG
 This is a test for markdown.  
 
 
-● path uses /images
+● path uses /images and liquid url filter
 
   
 one   
-![](/images/2024-06-29-01.JPG)  
+![]({{'/images/2024-06-29-01.JPG' | relative_url }})  
 
 -------  
   
