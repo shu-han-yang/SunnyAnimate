@@ -10,7 +10,10 @@ Today I went to Urawa racecourse!
 
 
   
-![picture1](images/2024-06-29-01.JPG)  
+![](/images/2024-06-29-01.JPG)  
 ohblahblah  
-![picture2](images/2024-06-29-01.JPG)
+
+
+![](https://drive.google.com/file/d/1xRDAQHUHuB-5_lqB9wGJa0-n8l8kxadq/view?usp=drive_link) 
+
 
