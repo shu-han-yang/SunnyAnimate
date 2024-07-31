@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Markdown test post
+title: Post image test ~
 thumbnail: images/2024-06-29-01.JPG
 ---
 
-# Markdown test
+# Post imgae test
  
-This is a test for markdown.  
+This is a test for inserting image path in posts running by jekyll on GitHun Pages.  
 
 =============  
 ### Summary  
@@ -40,8 +40,9 @@ two
 
 
   
-
-
+  
+↑以上為個人遇到圖片在Github Preview跑不出來但在網頁跑得出來的實驗跟筆記..
+  
 
 
 
