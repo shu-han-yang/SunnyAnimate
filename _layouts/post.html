@@ -1,12 +1,26 @@
 ---
 layout: default
 ---
+<div class="all_content">
+    <div class="post_container">
+        <div class="head_container">
+            <p style="color: lightcoral;">{{ page.catergory}} </p>
+            <h1>{{ page.title }} </h1>
+            <h6>{{ page.date | date_to_long_string}} </h6>
+            <div class="head_picture" style="background-image: url({{ page.thumbnail }});"></div>
+        </div>
 
-<p>Date:</p>
-<h1>{{ page.title }} </h1>
-
+        <div class="article_container">
       
     {{ content }} <!--liquid(jekyll使用語言之一)-->
+
+        </div>
+        
+        <hr>
+        <p>like my blog? see more at .😬</p>
+
+    </div>
+</div>
 
 
 

@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 title: Post image test ~
+catergory: testing
 thumbnail: images/2024-06-29-01.JPG
 ---
 
