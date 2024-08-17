@@ -32,11 +32,23 @@ a{
 
 }
 
+.post_container_top{
+    margin: auto; /* horizontally center a block element (like <div>) */
+    width: 880px;
+    height: 120px;
+    background: lightgray;
+    margin-bottom: -20px;
+
+}
+
 .post_container{
     margin: auto; /* horizontally center a block element (like <div>) */
     width: 880px;
     border: thin solid;
     border-color: black;
+    
+    border: 12px solid transparent;
+    border-image: url(images/style/post_border.png) 33 round;
 
 
     padding: 6px;   /* 暫時分清楚區塊用*/
@@ -46,7 +58,7 @@ a{
 
 .head_container{
     background: white;
-    margin: 0px 30px 42px 30px;
+    margin: 0px 30px 62px 30px;
     text-align: center;
 
     border: thin solid;
@@ -73,11 +85,11 @@ a{
 
 .article_container{
     background: white;
-    padding: 18px 30px 18px 30px;
+    margin: 0px 68px 52px 68px;
 }
 
 .article_container img{
     display: block;
     margin: auto;
-    width:680px;
+    width:640px;
 }
