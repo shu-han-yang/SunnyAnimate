@@ -2,7 +2,7 @@
 layout: post
 title: 關於Build Up Sunny計畫
 catergory: mood & murmur
-thumbnail: 
+thumbnail:
 ---
 
 關於Build Up Sunny計畫，距離上一篇文已過了一週，網站沒什麼特別進度。
