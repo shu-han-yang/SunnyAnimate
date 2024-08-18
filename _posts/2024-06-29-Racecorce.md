@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Racecourse
-catergory: mood & murmur
+category: mood & murmur
+category_code: MM
 thumbnail: images/2024-06-29-01.JPG
 ---
 

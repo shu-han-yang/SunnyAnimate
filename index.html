@@ -8,11 +8,22 @@ title: Home
 
 <p>yay read my posts.</p>
 
-{% for post in site.posts %}
-    <div class="thumbnail">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <img src="{{ post.thumbnail | relative_url }}"/>
+<div class="content_section">
+    <div class="thumbnail_container"> 
+        {% for post in site.posts %}
+            <div class="thumbnail">
+                <p class="tag_{{ post.category_code }}">{{ post.category }}</p>
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                {% if post.thumbnail %}
+                    <img src="{{ post.thumbnail | relative_url }}"/>
+                {% else %}
+                    <p> #no picture</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+
     </div>
-{% endfor %}
+
+</div>
 
 

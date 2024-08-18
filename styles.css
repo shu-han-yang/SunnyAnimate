@@ -2,6 +2,7 @@ a{
     color: #222222 ;
 }
 
+
 .image figcaption{
     text-align: center; 
     color: grey; 
@@ -10,23 +11,7 @@ a{
 }
 
 
-.thumbnail{
-    border: thin solid black;
-    display: inline-block;
-    margin: 25px;
-    
-}
-
-.thumbnail h3{
-    text-align: center;
-}
-
-.thumbnail img{
-    width: 250px;
-    margin: 25px;
-}
-
-
+/* <body> style for layouts */
 #default {
     background-color: lightsalmon;
 
@@ -36,9 +21,105 @@ a{
     background-color: whitesmoke;
 }
 
-.all_content{
+
+
+
+
+/* posts area in home */
+
+
+.content_section{
+
+}
+
+.thumbnail_container{
+    border: thin solid lightpink;
+    display: block;
+    margin: auto;
+    width: 1380px;
+    text-align: center;
+}
+
+.thumbnail{
+    border: thin solid black;
+    display: inline-block;
+    margin: 20px;
+    padding: 12px;
+    width: 260px;
+    background-color: whitesmoke;
+}
+
+.thumbnail h3{
+    text-align: center;
+}
+
+.thumbnail img{
+    width: 260px;
+    height: 210px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+
+}
+
+/* category marking styles */
+
+#default .tag_LN{
+    display: block;
+    margin: auto;
+    width: 120px;
+    background-color: lightblue;
+    font-size: 0.8em;
+    text-align: center;
+ 
+}
+
+#default .tag_TS{
+    display: block;
+    margin: auto;
+    width: 120px;
+    background-color: lightgreen;
+    font-size: 0.8em;
+    text-align: center;
+ 
+}
+
+#default .tag_MM{
+    display: block;
+    margin: auto;
+    width: 120px;
+    background-color: lightpink;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+
+#post .tag_LN {
+    color: lightblue;
+    font-size: 0.9em;
+    text-align: center;
+}
+#post .tag_TS{
+    color: lightgreen;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#post .tag_MM{
+    color: lightcoral;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+
+
+
+.all_content {
     position: relative;
 }
+
 
 .post_container_top{
     z-index: 10;
@@ -73,7 +154,7 @@ a{
 
 
 .head_container{
-    margin: 0px 30px 62px 30px;
+    margin: 10px 30px 62px 30px;
     text-align: center;
 
     border: thin solid;
