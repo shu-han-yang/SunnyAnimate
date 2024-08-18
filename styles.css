@@ -64,7 +64,7 @@ a{
 
 /* category marking styles */
 
-#default .tag_LN{
+.tag_LN{
     display: block;
     margin: auto;
     width: 120px;
