@@ -25,19 +25,24 @@ a{
 
 
 
-/* posts area in home */
+/* 'Home' posts section */
 
 
 .content_section{
 
 }
 
-.thumbnail_container{
+.thumbnail_container_left, .thumbnail_container_right{
     border: thin solid lightpink;
-    display: block;
-    margin: auto;
-    width: 1380px;
-    text-align: center;
+    display: inline-flex;
+    height: 400px;
+}
+
+.thumbnail_container_left{
+    width: 39%;
+}
+.thumbnail_container_right{
+    width: 60%;
 }
 
 .thumbnail{
@@ -47,74 +52,88 @@ a{
     padding: 12px;
     width: 260px;
     background-color: whitesmoke;
+    text-align: center;
 }
+
+.thumbnail_highlight{
+    border: solid black;
+    display: block;
+    margin: 20px;
+    padding: 12px;
+    width: 340px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
 
 .thumbnail h3{
     text-align: center;
 }
 
-.thumbnail img{
+.thumbnail img, .thumbnail_highlight img{
     width: 260px;
     height: 210px;
     display: block;
     margin: auto;
     object-fit: cover;
-
 }
 
-/* category marking styles */
 
-#default .tag_LN{
+/* 'Blog' */
+
+.thumbnail_container_all{
+    border: thin solid lightpink;
     display: block;
     margin: auto;
-    width: 120px;
-    background-color: lightblue;
+    width: 1000px;
+}
+
+
+
+/* 'category tags' styles */
+
+#default .tag_LN, #default .tag_TS, #default .tag_MM{
+    display: block;
+    margin: auto;
     font-size: 0.8em;
     text-align: center;
- 
+}
+
+#default .tag_LN{
+    width: 120px;
+    background-color: lightblue;
 }
 
 #default .tag_TS{
-    display: block;
-    margin: auto;
     width: 120px;
     background-color: lightgreen;
-    font-size: 0.8em;
-    text-align: center;
- 
 }
 
 #default .tag_MM{
-    display: block;
-    margin: auto;
     width: 120px;
     background-color: lightpink;
-    font-size: 0.8em;
-    text-align: center;
 }
 
 
-
-#post .tag_LN {
-    color: lightblue;
+#post .tag_LN, #post .tag_TS, #post .tag_MM{
     font-size: 0.9em;
     text-align: center;
+}
+
+#post .tag_LN{
+    color: lightblue;
 }
 #post .tag_TS{
     color: lightgreen;
-    font-size: 0.9em;
-    text-align: center;
 }
 
 #post .tag_MM{
     color: lightcoral;
-    font-size: 0.9em;
-    text-align: center;
 }
 
 
 
-
+/*-------'post' layout-------*/
 
 .all_content {
     position: relative;

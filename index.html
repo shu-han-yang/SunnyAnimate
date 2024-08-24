@@ -9,8 +9,21 @@ title: Home
 <p>yay read my posts.</p>
 
 <div class="content_section">
-    <div class="thumbnail_container"> 
-        {% for post in site.posts %}
+    <div class="thumbnail_container_left"> 
+        {% for post in site.posts limit:1 %}
+            <div class="thumbnail_highlight">
+                <p class="tag_{{ post.category_code }}">{{ post.category }}</p>
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                {% if post.thumbnail %}
+                    <img src="{{ post.thumbnail | relative_url }}"/>
+                {% else %}
+                    <p> #no picture</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <div class="thumbnail_container_right">
+        {% for post in site.posts limit:3 offset:continue %}
             <div class="thumbnail">
                 <p class="tag_{{ post.category_code }}">{{ post.category }}</p>
                 <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
@@ -23,7 +36,7 @@ title: Home
         {% endfor %}
 
     </div>
-
 </div>
+
 
 

@@ -1,2 +1,13 @@
 permalink: :title
 
+paginate: 3
+paginate_path: "blog/archives/page:num/"
+
+plugins:
+  - jekyll-paginate
+  #- jekyll-archives
+
+
+#jekyll-archives:
+  #enabled: all
+  #layout: archive

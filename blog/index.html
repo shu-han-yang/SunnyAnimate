@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+---
+
+<h1>Blog</h1>
+
+<a href="{{'blog/archives' | relative_url }}">Arhives</a>
+
+<div class="thumbnail_container_all">
+        {% for post in site.posts limit:10 %}
+            <div class="thumbnail">
+                <p class="tag_{{ post.category_code }}">{{ post.category }}</p>
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                {% if post.thumbnail %}
+                    <img src="{{ post.thumbnail | relative_url }}"/>
+                {% else %}
+                    <p> #no picture</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+</div>
+
+
+
