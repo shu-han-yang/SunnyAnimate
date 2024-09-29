@@ -196,7 +196,6 @@ a{
     /* For mobile phones: */
     /* Home */
     #default, #post{
-        margin-left: 0;
     }
     .thumbnail_container_left, .thumbnail_container_right, .thumbnail, .thumbnail_highlight{
         width: 100%;
