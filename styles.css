@@ -14,7 +14,7 @@ a{
 /* <body> style for layouts */
 #default {
     background-color: lightsalmon;
-
+    text-align: center;
 }
 
 #post {
@@ -42,7 +42,7 @@ a{
 }
 
 .thumbnail{
-    border: thin solid black;
+    border: thin solid grey;
     display: inline-block;
     margin: 20px;
     padding: 12px;
@@ -53,7 +53,7 @@ a{
 }
 
 .thumbnail_highlight{
-    border: solid black;
+    border: solid thin grey;
     display: block;
     margin: 20px;
     padding: 12px;
@@ -77,19 +77,9 @@ a{
 }
 
 
-@media only screen and (max-width: 620px) {
-      /* For mobile phones: */
-    .thumbnail_container_left, .thumbnail_container_right, .thumbnail, .thumbnail_highlight{
-    width: 100%;
-    margin: 0;
-    display: block;
-    }
-}
 
 
-
-
-/* 'Blog' */
+/* Blog */
 
 .thumbnail_container_all{
     border: thin solid lightpink;
@@ -97,6 +87,8 @@ a{
     margin: auto;
     width: 1000px;
 }
+
+
 
 
 
@@ -170,22 +162,14 @@ a{
     margin: auto; /* horizontally center a block element (like <div>) */
     margin-top: 100px;
     width: 880px;
-
-    border: thin solid;
-    border-color: black;
     border: 12px solid transparent;
     border-image: url(images/style/post_border.png) 33 round;
-
-
-    padding: 6px;   /* 暫時分清楚區塊用*/
-
 }
 
 
 .head_container{
     margin: 10px 30px 62px 30px;
     text-align: center;
-
     border: thin solid;
     border-color: lightgray;
 }
@@ -222,3 +206,45 @@ a{
     margin: auto;
     width:640px;
 }
+
+
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    /* Home */
+    #default, #post{
+        margin-left: 0;
+    }
+    .thumbnail_container_left, .thumbnail_container_right, .thumbnail, .thumbnail_highlight{
+        width: 100%;
+        margin: 0;
+        display: block;
+        border: 0;
+    }
+    .thumbnail, .thumbnail_highlight{
+        border-bottom: thin solid grey;
+    }
+    /* Blog */
+
+    /* Post */
+    .post_container_top, .article_container img{
+        width: 100%;
+    }
+
+    .post_container{
+        width: 96%;
+    }
+    
+    .post_container_top{
+        background-position: center bottom;
+    }
+
+    .head_container{
+        margin: 10px 0px 62px 0px;
+    }
+
+    .article_container{
+      margin: 0px 0px 52px 0px;
+    }
+}
+
