@@ -27,9 +27,7 @@ a{
 
 /* 'Home' posts section */
 
-
 .content_section{
-
 }
 
 .thumbnail_container_left, .thumbnail_container_right{
@@ -79,6 +77,16 @@ a{
 }
 
 
+@media only screen and (max-width: 620px) {
+      /* For mobile phones: */
+    .thumbnail_container_left, .thumbnail_container_right .thumbnail .thumbnail_highlight{
+   width: 100%;
+    }
+}
+
+
+
+
 /* 'Blog' */
 
 .thumbnail_container_all{
@@ -90,50 +98,50 @@ a{
 
 
 
-/* 'category tags' styles */
+/* Posts' category tags & styles */
 
-#default .tag_LN, #default .tag_TS, #default .tag_MM{
+#default .tag_learningnotes, #default .tag_testing, #default .tag_mood-murmur{
     display: block;
     margin: auto;
     font-size: 0.8em;
     text-align: center;
 }
 
-#default .tag_LN{
+#default .tag_learningnotes{
     width: 120px;
     background-color: lightblue;
 }
 
-#default .tag_TS{
+#default .tag_testing{
     width: 120px;
     background-color: lightgreen;
 }
 
-#default .tag_MM{
+#default .tag_mood-murmur{
     width: 120px;
     background-color: lightpink;
 }
 
 
-#post .tag_LN, #post .tag_TS, #post .tag_MM{
+#post .tag_learningnotes, #post .tag_testing, #post .tag_mood-murmur{
     font-size: 0.9em;
     text-align: center;
 }
 
-#post .tag_LN{
+#post .tag_learningnotes{
     color: lightblue;
 }
-#post .tag_TS{
+#post .tag_testing{
     color: lightgreen;
 }
 
-#post .tag_MM{
+#post .tag_mood-murmur{
     color: lightcoral;
 }
 
 
 
-/*-------'post' layout-------*/
+/*-------Layout: 'post'-------*/
 
 .all_content {
     position: relative;

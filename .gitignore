@@ -1,4 +1,5 @@
 _site
 _posts/_hidden
+blog/_drafts
 .git
-.jekyll-cache}
+.jekyll-cache

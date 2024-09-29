@@ -6,13 +6,14 @@ title: Home
 <h1>Main</h1>
 <p>Welcome to my blog!</p>
 
-<p>yay read my posts.</p>
+<p>{{ site.categories | remove: " " | replace:"&","-" }}</p>
 
 <div class="content_section">
+    <h2>Latest posts</h2>
     <div class="thumbnail_container_left"> 
         {% for post in site.posts limit:1 %}
             <div class="thumbnail_highlight">
-                <p class="tag_{{ post.category_code }}">{{ post.category }}</p>
+                <p class="tag_{{ post.category | remove: " " | replace:"&","-" }}">{{ post.category }}</p>
                 <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
                 {% if post.thumbnail %}
                     <img src="{{ post.thumbnail | relative_url }}"/>
@@ -21,11 +22,11 @@ title: Home
                 {% endif %}
             </div>
         {% endfor %}
-    </div>
+    </div> 
     <div class="thumbnail_container_right">
-        {% for post in site.posts limit:3 offset:continue %}
+        {% for post in site.posts limit:3 offset:continue %} <!--offset:continue 從上一個斷開的地方開始-->
             <div class="thumbnail">
-                <p class="tag_{{ post.category_code }}">{{ post.category }}</p>
+                <p class="tag_{{ post.category | remove: " " | replace:"&","-" }}">{{ post.category }}</p>
                 <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
                 {% if post.thumbnail %}
                     <img src="{{ post.thumbnail | relative_url }}"/>
@@ -34,7 +35,6 @@ title: Home
                 {% endif %}
             </div>
         {% endfor %}
-
     </div>
 </div>
 
