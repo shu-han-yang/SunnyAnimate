@@ -33,14 +33,12 @@ a{
 .thumbnail_container_left, .thumbnail_container_right{
     border: thin solid lightpink;
     display: inline-flex;
-    height: 400px;
 }
 
 .thumbnail_container_left{
-    width: 39%;
+    width: 450px;
 }
 .thumbnail_container_right{
-    width: 60%;
 }
 
 .thumbnail{
@@ -49,6 +47,7 @@ a{
     margin: 20px;
     padding: 12px;
     width: 260px;
+    height: 400px;
     background-color: whitesmoke;
     text-align: center;
 }
@@ -59,6 +58,7 @@ a{
     margin: 20px;
     padding: 12px;
     width: 340px;
+    height: 400px;
     background-color: whitesmoke;
     text-align: center;
 }
@@ -79,8 +79,10 @@ a{
 
 @media only screen and (max-width: 620px) {
       /* For mobile phones: */
-    .thumbnail_container_left, .thumbnail_container_right .thumbnail .thumbnail_highlight{
-   width: 100%;
+    .thumbnail_container_left, .thumbnail_container_right, .thumbnail, .thumbnail_highlight{
+    width: 100%;
+    margin: 0;
+    display: block;
     }
 }
 
