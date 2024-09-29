@@ -208,6 +208,9 @@ a{
         border-bottom: thin solid grey;
     }
     /* Blog */
+    .thumbnail_container_all{
+        width: 100%;
+    }
 
     /* Post */
     .post_container_top, .article_container img{
