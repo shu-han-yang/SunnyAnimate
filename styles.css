@@ -41,7 +41,7 @@ a{
     border: thin solid grey;
     display: inline-block;
     margin: 20px;
-    padding: 12px;
+    padding: 12px 0px 12px 0px;
     width: 260px;
     height: 400px;
     background-color: whitesmoke;
@@ -51,7 +51,7 @@ a{
     border: solid thin grey;
     display: block;
     margin: 20px;
-    padding: 12px;
+    padding: 12px 0px 12px 0px;
     width: 340px;
     height: 400px;
     background-color: whitesmoke;
@@ -207,6 +207,10 @@ a{
     .thumbnail, .thumbnail_highlight{
         border-bottom: thin solid grey;
     }
+    .thumbnail img, .thumbnail_highlight img{
+        width: 100%;
+    }
+
     /* Blog */
     .thumbnail_container_all{
         width: 100%;
